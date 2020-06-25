@@ -5,7 +5,7 @@ USER root
 RUN /usr/local/bin/install-plugins.sh sonarqube-scanner && \
     /usr/local/bin/install-plugins.sh github && \
     /usr/local/bin/install-plugins.sh ws-cleanup && \
-    /usr/local/bin/install-plugins.sh nexus && \
+    /usr/local/bin/install-plugins.sh nexus-artifact-uploader && \
     /usr/local/bin/install-plugins.sh kubernetes && \
     /usr/local/bin/install-plugins.sh docker-workflow && \
     /usr/local/bin/install-plugins.sh kubernetes-cli && \
