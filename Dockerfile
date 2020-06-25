@@ -2,7 +2,8 @@ from jenkins/jenkins:lts-alpine
 USER root
 
 # Pipeline
-RUN /usr/local/bin/install-plugins.sh sonarqube-scanner && \
+RUN /usr/local/bin/install-plugins.sh sonarqube-generic-coverage && \
+    /usr/local/bin/install-plugins.sh sonargraph-integration && \
     /usr/local/bin/install-plugins.sh github && \
     /usr/local/bin/install-plugins.sh ws-cleanup && \
     /usr/local/bin/install-plugins.sh nexus-artifact-uploader && \
